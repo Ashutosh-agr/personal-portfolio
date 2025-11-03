@@ -85,8 +85,24 @@ export const projects = [
     link: "Click to visit",
     host: "https://netronix-psi.vercel.app/",
   },
+
   {
     id: 2,
+    title: "Finnex - Next-Gen Market Insights",
+    des: "Tracking platform with real-time market data, personalized watchlists, and advanced technical analysis powered by TradingView.",
+    img: "/finnex.svg",
+    iconLists: [
+      "/next.svg",
+      "/ts.svg",
+      "/spring-boot-1.svg",
+      "/MongoDB.svg",
+      "/gemini-color.svg",
+    ],
+    link: "Click to visit",
+    host: "https://finnex-olive.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Air Cargo Booking & Tracking System",
     des: "Simplify your air cargo booking and tracking process with our innovative system.",
     img: "/air.svg",
@@ -173,7 +189,7 @@ export const workExperience = [
   {
     id: 2,
     title: "LinkedIn",
-    desc: "Visit My LinkedIn.                                                                         ",
+    desc: "Visit My LinkedIn Profile.",
     className: "md:col-span-2",
     thumbnail: "/linblu.png",
     link: "https://www.linkedin.com/in/ashutosh-agrawal-24817224a/",
@@ -181,18 +197,18 @@ export const workExperience = [
   {
     id: 4,
     title: "Leetcode",
-    desc: "View Leetcode Profile.",
+    desc: "View my Leetcode Profile.",
     className: "md:col-span-2",
     thumbnail: "/leet.svg",
     link: "https://leetcode.com/u/Giyu__003/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Resume",
     desc: "View my Resume.",
     className: "md:col-span-2",
     thumbnail: "/resume.png",
-    link: "https://drive.google.com/file/d/1X30e4eaeeh5XDflsvpucCxvgQjn7Po8e/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1VoPIVVJdvjDeUHa5O6s85Ga4TreltQdE/view?usp=sharing",
   },
 ]
 

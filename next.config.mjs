@@ -1,6 +1,15 @@
 import {withSentryConfig} from "@sentry/nextjs"
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  webpack: (config, {isServer}) => {
+    // Suppress specific warnings
+    config.ignoreWarnings = [
+      {module: /node_modules\/@opentelemetry\/instrumentation/},
+      {module: /node_modules\/require-in-the-middle/},
+    ]
+    return config
+  },
+}
 
 // If SENTRY_DSN is unset, avoid wrapping nextConfig with Sentry to prevent
 // outbound Sentry requests in local development (which can fail behind proxies).

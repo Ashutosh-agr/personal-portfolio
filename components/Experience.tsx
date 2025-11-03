@@ -11,7 +11,7 @@ const Experience = () => {
         My <span className="text-purple">Professional Presence</span>
       </h1>
 
-      <div className="w-full mt-11 flex flex-row flex-nowrap justify-center items-center gap-10 overflow-x-auto">
+      <div className="w-full mt-11 flex flex-wrap justify-center items-center gap-6 px-4">
         {workExperience.map((card) => (
           <Button
             key={card.id}
@@ -23,7 +23,8 @@ const Experience = () => {
                 "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
-            className="w-80 min-w-[18rem] text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            containerClassName="sm:w-96 w-[80vw] text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            className="relative bg-slate-900/[0.] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased"
             onClick={() => window.open(card.link, "_blank")}
           >
             <div className="flex flex-row items-center p-3 py-6 md:p-5 lg:p-10 gap-3">
